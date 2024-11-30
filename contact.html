@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        /* General Styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: auto;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        header .logo h1 {
+            font-size: 2rem;
+            text-align: center;
+            color: white;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        nav ul.nav-links {
+            list-style-type: none;
+            display: flex;
+        }
+        
+        nav ul.nav-links li {
+            margin-left: 2rem;
+        }
+        
+        nav ul.nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul.nav-links li a:hover {
+            color: #ff9900;
+        }
+        section{
+            background-image: url(Img/child\ contact.jpg);
+            background-size: cover;
+        }
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        #contact {
+            background-color: #fff;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #007BFF;
+        }
+
+        /* Contact Form */
+        #contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        #contact-form input,
+        #contact-form textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        #contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        #contact-form button {
+            background-color: #007BFF;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #contact-form button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        footer h1 {
+            color: aliceblue;
+            margin-bottom: 1rem;
+        }
+        
+        footer p {
+            color: #ccc;
+            font-size: 1rem;
+        }
+        
+        footer .footer-links {
+            margin-top: 1rem;
+        }
+        
+        footer .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        
+        footer .footer-links a:hover {
+            color: #ff9900;
+        }
+        
+
+        /* Responsive Styles */
+        @media only screen and (max-width: 768px) {
+            #contact {
+                padding: 3rem 1.5rem;
+            }
+
+            #contact h2 {
+                font-size: 2rem;
+            }
+
+            #contact-form {
+                max-width: 90%;
+            }
+
+            #contact-form input,
+            #contact-form textarea {
+                font-size: 0.9rem;
+                padding: 0.8rem;
+            }
+
+            #contact-form button {
+                font-size: 1rem;
+                padding: 0.8rem 1.5rem;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            #contact h2 {
+                font-size: 1.5rem;
+            }
+
+            #contact-form input,
+            #contact-form textarea {
+                font-size: 0.9rem;
+                padding: 0.7rem;
+            }
+
+            #contact-form button {
+                font-size: 0.9rem;
+                padding: 0.7rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>RM Convent School</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <h1>RM Convent School</h1>
+            <p>&copy; 2024 RM Convent School. All Rights Reserved.</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>

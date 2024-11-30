@@ -1,0 +1,247 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+nav ul.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul.nav-links li {
+    margin-left: 2rem;
+}
+
+nav ul.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul.nav-links li a:hover {
+    color: #ff9900;
+}
+
+/* Hero Section */
+.hero {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* About Section */
+#about {
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.about-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.about h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Gallery Section */
+section > div > div > div {
+    padding: 2rem;
+    background-color: #eaeaea;
+    text-align: center;
+}
+
+section > div > div > div h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+section > div > div > div div {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+/* Contact Section */
+#contact {
+    padding: 4rem 2rem;
+    background-color: #f1f1f1;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact-form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+footer h1, footer h2 {
+    color: aliceblue;
+}
+
+footer h3, footer p {
+    color: #ccc;
+}
+
+footer ol {
+    list-style-type: none;
+    margin-top: 2rem;
+    padding: 0;
+}
+
+footer ol a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+footer ol a:hover {
+    color: #ff9900;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    nav ul.nav-links {
+        display: none;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .about-list {
+        grid-template-columns: 1fr;
+    }
+
+    footer ol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ol a {
+        margin: 1rem 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    footer h1 {
+        font-size: 1.5rem;
+    }
+
+    footer h3 {
+        font-size: 1rem;
+    }
+}
